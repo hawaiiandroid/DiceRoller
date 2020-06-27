@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Würfel-App</string>
+    <string name="dice">Würfeln</string>
 </resources>
