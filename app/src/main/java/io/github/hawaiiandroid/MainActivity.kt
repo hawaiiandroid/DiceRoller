@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 
 /**
  * Beim Aufruf der App wird der Knopf mit einer Logik versehen
@@ -25,8 +24,11 @@ class MainActivity : AppCompatActivity() {
      * Bildschirm angezeigt
      */
     private fun rollDice() {
-        val diceNumber: TextView = findViewById(R.id.diceNumber)
-        diceNumber.text = Dice(6).roll().toString()
+        val diceNumber1: TextView = findViewById(R.id.diceNumber1)
+        val diceNumber2: TextView = findViewById(R.id.diceNumber2)
+
+        diceNumber1.text = Dice(6).roll().toString()
+        diceNumber2.text = Dice(6).roll().toString()
     }
 }
 
